@@ -1,0 +1,123 @@
+body {
+    background: #E5E5E5;
+}
+
+a {
+    color: #838590;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #b0b4c7;
+    text-decoration: none;
+}
+
+main i {
+    font-size: 60px !important
+}
+
+.hr {
+    background: #838590;
+}
+
+.active__d {
+    background: #cbcbcb;
+    border-right: 10px solid #bebebe;
+}
+
+.flex {
+    display: flex;
+    align-items: center
+}
+
+.part {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.pp {
+    background: #F7F8FC;
+    padding: 20px;
+    border-radius: 6px;
+    margin: 20px
+}
+
+.patient h5 {
+    display: flex;
+    align-items: center;
+}
+
+.patient .name {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    display: flex;
+    margin: 0;
+}
+
+.dashboard {
+    width: 25%;
+    background: #363740;
+    margin: 0;
+}
+
+.dashboard .dashboard__logo {
+    margin: 30px 40px;
+}
+
+.dashboard ul li {
+    padding: 10px 5px;
+    margin: 20px 0 0 20px;
+    display: flex;
+}
+
+.main {
+    width: 75%;
+    margin: 0;
+}
+
+.main ul {
+    padding: 0;
+    list-style: none;
+}
+
+.main p,
+h3,
+h4,
+h5 {
+    font-weight: 600;
+}
+
+.main__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+.part__black {
+    padding: 10px;
+    border-radius: 6px;
+    color: white;
+    background: #363740;
+    margin: 20px;
+    text-align: center;
+}
+
+.part__black P {
+    margin: 0;
+}
+
+.main__nav img {
+    padding: 0 10px;
+}
+
+.main__part {
+    padding-left: 40px;
+}
