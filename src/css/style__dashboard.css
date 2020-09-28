@@ -7,17 +7,35 @@ a {
     font-size: 20px;
 }
 
+.col-md-9,
+.col-md-10,
+.col-md-3,
+.col-md-6,
+.col-md-9 {
+    padding: 0 !important;
+}
+
+.row {
+    margin: 0;
+}
+
 a:hover {
     color: #b0b4c7;
     text-decoration: none;
 }
 
-main i {
-    font-size: 60px !important
-}
-
 .hr {
     background: #838590;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-right: 20px;
+}
+
+hr {
+    background: #cfd0d9;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-right: 20px;
 }
 
 .active__d {
@@ -30,18 +48,29 @@ main i {
     align-items: center
 }
 
-.part {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    margin-bottom: 30px;
+.box__white {
+    background: #F7F8FC;
+    color: rgb(0, 0, 0);
 }
 
-.pp {
-    background: #F7F8FC;
+.box__black {
+    background: #363740;
+    color: rgb(255, 255, 255)38, 89, 89)
+}
+
+.box {
+    margin: 0 20px;
     padding: 20px;
     border-radius: 6px;
-    margin: 20px
+}
+
+.box__padding {
+    padding: 20px !important;
+    border-radius: 6px;
+}
+
+.form-group {
+    margin-bottom: 20px;
 }
 
 .patient h5 {
@@ -54,7 +83,7 @@ main i {
 }
 
 ul {
-    list-style: none;
+    list-style: none !important;
 }
 
 main {
@@ -62,25 +91,13 @@ main {
     margin: 0;
 }
 
-.dashboard {
-    width: 25%;
-    background: #363740;
-    margin: 0;
-}
-
-.dashboard .dashboard__logo {
-    margin: 30px 40px;
-}
-
-.dashboard ul li {
-    padding: 10px 5px;
-    margin: 20px 0 0 20px;
-    display: flex;
-}
-
 .main {
     width: 75%;
     margin: 0;
+}
+
+main i {
+    font-size: 60px !important
 }
 
 .main ul {
@@ -101,23 +118,24 @@ h5 {
     padding: 20px 20px;
 }
 
-.part__black {
-    padding: 10px;
-    border-radius: 6px;
-    color: white;
-    background: #363740;
-    margin: 20px;
-    text-align: center;
-}
-
-.part__black P {
-    margin: 0;
-}
-
 .main__nav img {
     padding: 0 10px;
 }
 
-.main__part {
-    padding-left: 40px;
+
+
+.dashboard {
+    width: 25%;
+    background: #363740;
+    margin: 0;
+}
+
+.dashboard .dashboard__logo {
+    margin: 30px 40px;
+}
+
+.dashboard ul li {
+    padding: 10px 5px;
+    margin: 20px 0 0 20px;
+    display: flex;
 }
