@@ -44,26 +44,37 @@
         </div>
         <div class="main">
             <div class="main__nav">
-                <h3>Reception | add</h3>
+                <h3>Doctor form</h3>
                 <div class="nav__left">
                     <img src="../src/img/icons/search.svg" alt="">
                     <img src="../src/img/icons/message.svg" alt="">
-                    <a href="">kirubel | Reception</a>
+                    <a href="">kirubel | Doctor</a>
                 </div>
             </div>
-            <div class=" row">
-                <div class="main__part col-md-9">
-                    <div class="reception box box__white reception__add">
-                        <p>New patient form</p>
-                        <form action="" method="post">
-                            {% csrf_token %}
-                            {{form | crispy}}
-                            <input type="submit" value="save" class='btn btn-success'>
-                        </form>
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="box box__white">
+                        <div class="name row">
+                            <i class="fa fa-user col-4"></i>
+                            <h5 class="col-8">{{patient.name}}</h5>
+                        </div>
+                        <div class="info row">
+                            <p class="col-sm-6">age : {{patient.age}}</p>
+                            <p class="col-sm-6">sex : {{patient.sex}}</p>
+                            <p class="col-sm-6">adress : {{patient.adress}}</p>
+                            <p class="col-sm-6">city : {{patient.city}}</p>
+                            <p class="col-sm-6">phone : {{patient.phone}}</p>
+                            <p class="col-sm-6">phone2 : {{patient.phone2}}</p>
+                            <p class="col-sm-6">maritalStatus : {{patient.maritalStatus}}</p>
+                            <p class="col-sm-6">language : {{patient.language}}</p>
+                            <a href='/add_active/{{patient.id}}'>save</a>
+                        </div>
+
                     </div>
+                    <br>
                 </div>
-                <div class="col-md-3 box__white box__padding">
-                    <ul class="">
+                <div class="box__white box__padding col-md-3">
+                    <ul>
                         <li>
                             <h4>test</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium esse suscipit</p>

@@ -48,7 +48,7 @@
                 <div class="nav__left">
                     <img src="../src/img/icons/search.svg" alt="">
                     <img src="../src/img/icons/message.svg" alt="">
-                    <a href="">kirubel | Doctor</a>
+                    <a href="">{{user.field}} | {{ user.username}}</a>
                 </div>
             </div>
             <div class="row">
@@ -59,10 +59,10 @@
                             <h5 class="col-8">Kirubel demelash</h5>
                         </div>
                         <div class="info row">
-                            <p class="col-sm-6">age : 26</p>
-                            <p class="col-sm-6">sex : male</p>
-                            <p class="col-sm-6">adress : yeka / 9</p>
-                            <p class="col-sm-6">phone : +255645655</p>
+                            <p class="col-sm-6">age : {{patient.age}}</p>
+                            <p class="col-sm-6">sex : {{patient.sex}}</p>
+                            <p class="col-sm-6">adress : {{patient.adress}}</p>
+                            <p class="col-sm-6">phone : +{{patient.phone}}</p>
                             <p class="col-sm-12 btn btn-info">see all info</p>
                         </div>
 
@@ -71,7 +71,8 @@
                     <br>
                     <div class="box box__white">
                         <h4>medical form</h4>
-                        <form action="">
+                        <form action="" method='post'>
+                            {% csrf_token %}
                             <div class="form-group row">
                                 <label for='disease' class='col-4'>disease</label>
                                 <input type="text" class='col-7 form-control' id='disease' name='disease'>
@@ -84,7 +85,7 @@
                                 <label for='description' class='col-4'>description</label>
                                 <textarea class='col-7 form-control' id='description' name='description'></textarea>
                             </div>
-                            <a href="#" class="btn btn-success">save</a>
+                            <button class="btn btn-success">save</button>
                         </form>
                     </div>
                     <br>
