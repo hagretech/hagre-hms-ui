@@ -148,8 +148,24 @@ h5 {
         transform: translateX(0%) !important
     }
 
+    .mobile_nav_btn {
+        width: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mobile_nav_btn span {
+        width: 100%;
+        background: #838590;
+        padding: 3px;
+        margin: 2px;
+        border-radius: 2px;
+    }
+
     .mobile_nav {
-        display: block;
+        display: flex;
+        justify-content: space-between;
     }
 
     main {
@@ -161,8 +177,8 @@ h5 {
         z-index: 1;
         width: 100%;
         top: 90px;
-        transition: 1s;
-        transform: translateX(150%)
+        transition: 0.25s;
+        transform: translateX(-150%)
     }
 
     .dashboard .dashboard__logo {
