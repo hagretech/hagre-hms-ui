@@ -1,6 +1,12 @@
+.padding {
+    padding: 30px;
+}
+
 .hero {
     display: flex;
     margin: 30px;
+    height: 70vh;
+    align-items: center
 }
 
 .hero_txt {
@@ -18,5 +24,28 @@
     width: 100%;
 
     border-radius: 20px;
-    box-shadow: 1px 1px 1px
+    box-shadow: 15px 15px 40px
+}
+
+.info {
+    text-align: center;
+}
+
+.modules {}
+
+.modules h3,
+.modules_txt {
+    text-align: center;
+}
+
+.modules_cont li {
+    position: relative;
+}
+
+.modules_cont li::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: red;
+    content: 'akjadlkj';
 }
