@@ -1,0 +1,22 @@
+.hero {
+    display: flex;
+    margin: 30px;
+}
+
+.hero_txt {
+    width: 40%;
+    display: flex;
+    align-items: center
+}
+
+.hero_img {
+    width: 60%;
+    padding: 30px;
+}
+
+.hero_img img {
+    width: 100%;
+
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px
+}
