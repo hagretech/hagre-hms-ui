@@ -40,12 +40,56 @@
 
 .modules_cont li {
     position: relative;
+    padding: 10px;
+}
+
+.modules_cont li::before {
+    top: 10px;
+    left: -20px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4fc876;
+    content: '';
 }
 
 .modules_cont li::after {
+    top: 20px;
+    left: -12px;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background: red;
-    content: 'akjadlkj';
+    width: 5px;
+    height: 95%;
+    background: #4fc876;
+    content: '';
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact_cont {
+    background: #8fdfa9;
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center
+}
+
+.contact_cont ul {
+    padding: 0;
+}
+
+.contact ul li {
+    height: 90px;
+    margin-top: 10px;
+}
+
+
+.contact p {
+    margin: 10px !important;
+}
+
+footer {
+    text-align: center;
 }
