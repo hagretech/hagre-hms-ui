@@ -12,18 +12,85 @@
 
 <body>
     <main>
-        <nav></nav>
-        <div class="hero">
-            <div class="hero txt">
-                <h2>Lorem ipsum !</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet illum, nobis quae corporis totam pariatur</p>
-                <a href="" class="btn btn-outline-success">try it now</a>
+        <div class="dashboard">
+            <div class="dashboard__logo">
+                <img src="../src/img/hagre.svg" alt="hagre logo">
             </div>
-            <div class="hero_img">
-                <img src="../src/img/hms1.svg" alt="img">
-            </div>
+            <div class="dashboard__ul">
+                <ul>
+                    <li class="active__d">
+                        <a href=""><img src="../src/img/icons/overview.svg" alt=""> overview</a>
+                    </li>
+                    <li>
+                        <a href=""><img src="../src/img/icons/search.svg" alt=""> search</a>
+                    </li>
+                    <li>
+                        <a href="">+ add patients</a>
+                    </li>
+                    <li>
+                        <a href=""><img src="../src/img/icons/peoples.svg" alt=""> patients database</a>
+                    </li>
+                    <li>
+                        <a href=""><img src="../src/img/icons/doctor_icon.svg" alt=""> message</a>
+                    </li>
+                    <br>
+                    <hr class="hr">
+                    <br>
+                    <li>
+                        <a href=""><img src="../src/img/icons/settings.svg" alt=""> settings</a>
+                    </li>
+                    </ul>
+                    </div>
+                    </div>
+                    <div class="main">
+                        <div class="main__nav">
+                            <h3>Reception | add</h3>
+                            <div class="nav__left">
+                                <img src="../src/img/icons/search.svg" alt="">
+                                <img src="../src/img/icons/message.svg" alt="">
+                                <a href="">kirubel | Reception</a>
+                            </div>
+                        </div>
+                        <div class=" row">
+                            <div class="main__part col-md-9">
+                                <div class="reception box box__white reception__add">
+                                    <p>New patient form</p>
+                                    <form action="" method="post">
+                                        {% csrf_token %}
+                                        {{form | crispy}}
+                                        <input type="submit" value="save" class='btn btn-success'>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-3 box__white box__padding">
+                                <ul class="">
+                                    <li>
+                                        <h4>test</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium esse suscipit</p>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <h4>test</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium esse suscipit</p>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <h4>test</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium esse suscipit</p>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <h4>test</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium esse suscipit</p>
+                                    </li>
+                                    <hr>
+                                </ul>
+                            </div>
+                        </div>
         </div>
     </main>
+
+
 
     <script src="../src/lib/jquery/jquery.min.js"></script>
     <script src="../src/lib/bootstrap/js/bootstrap.min.js"></script>
