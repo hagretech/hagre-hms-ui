@@ -1,5 +1,5 @@
 let nav = $('.mobile_nav'),
-    dashboard = $('.dashboard')
+    dashboard = $('nav')
 
 console.log(nav)
 

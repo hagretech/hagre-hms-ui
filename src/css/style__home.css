@@ -2,6 +2,44 @@
     padding: 30px;
 }
 
+body {
+    overflow-x: hidden !important;
+}
+
+ul {
+    list-style: none !important;
+}
+
+.col-md-9,
+.col-md-10,
+.col-md-3,
+.col-md-6,
+.col-md-9 {
+    padding: 0 !important;
+}
+
+a {
+    color: #838590;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #b0b4c7;
+    text-decoration: none;
+}
+
+.hr {
+    background: #838590;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+hr {
+    background: #838590;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .box__black {
     background: #363740;
     color: rgb(255, 255, 255)38, 89, 89)
@@ -28,6 +66,10 @@ nav ul {
 nav ul a {
     font-size: 16px;
     padding: 0 10px;
+}
+
+.mobile_nav {
+    display: none;
 }
 
 .hero {
@@ -124,4 +166,107 @@ nav ul a {
 
 footer {
     text-align: center;
+    background: #363740;
+    padding: 10px;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 750px) {
+    .mobile_nav__active {
+        transform: translateX(0%) !important
+    }
+
+    .mobile_nav_btn {
+        width: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mobile_nav_btn span {
+        width: 100%;
+        background: #838590;
+        padding: 3px;
+        margin: 2px;
+        border-radius: 2px;
+    }
+
+    .mobile_nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .nav__logo {
+        display: none;
+    }
+
+    nav {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        top: 90px;
+        transition: 0.25s;
+        transform: translateX(-150%);
+        display: flex;
+        justify-content: center;
+    }
+
+    nav img {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    nav ul a {
+        padding: 20px;
+    }
+
+    .col-md-3 {
+        margin: 20px;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .hero_img {
+        position: absolute;
+        width: 80%;
+        top: 60px;
+        padding: 20px;
+        left: -10px;
+    }
+
+    .hero_txt {
+        width: 80%;
+        position: absolute;
+        z-index: 1;
+        background: #363740;
+        color: white;
+        padding: 20px;
+        border-radius: 20px;
+        top: 200px;
+        left: 80px;
+    }
+
+    .info img {
+        padding: 30px;
+        width: 100%;
+    }
 }
