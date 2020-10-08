@@ -39,6 +39,11 @@ hr {
     margin-right: 20px;
 }
 
+.box__black {
+    background: #363740;
+    color: white;
+}
+
 .active__d {
     background: #cbcbcb;
     border-right: 10px solid #bebebe;
